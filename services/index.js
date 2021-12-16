@@ -20,7 +20,7 @@ export const getPosts = async () => {
             createdAt
             slug
             title
-            expert
+            excerpt
             featuredImage {
               url
             }
@@ -59,7 +59,7 @@ export const getPostDetails = async (slug) => {
     query GetPostDetails($slug: String!) {
       post(where: { slug: $slug }) {
         title
-        expert
+        excerpt
         featuredImage {
           url
         }
@@ -165,7 +165,7 @@ export const getCategoryPost = async (slug) => {
             createdAt
             slug
             title
-            expert
+            excerpt
             featuredImage {
               url
             }
